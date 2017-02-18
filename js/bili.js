@@ -37,7 +37,7 @@ var loadPicRender = (function () {
 setTimeout(loadPicRender.init,0);
 
 var bannerRender = (function () {
-    let $bannerStart = $.Callbacks(),
+    var $bannerStart = $.Callbacks(),
         $bannerWrap = $('#bannerWrap'),
         $banner = $('.topic-preview'),
         $imgs = $banner.find('img'),
@@ -137,7 +137,7 @@ var bannerRender = (function () {
 bannerRender.init();
 
 var liveRender = (function () {
-    let $liveRightBtn = $('#liveRightBtn').find('li'),
+    var $liveRightBtn = $('#liveRightBtn').find('li'),
         $liveRightBody = $('#liveRightBody'),
         $step = 2;
     $liveRightBtn.on('click',function () {
